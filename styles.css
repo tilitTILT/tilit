@@ -1,0 +1,109 @@
+//page index.html
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+}
+
+#imageContainer {
+    position: relative;
+    display: block;  /* Change le display en block pour pouvoir centrer */
+    margin: 0 auto;  /* Centre le conteneur horizontalement */
+}
+.image-container {
+    position: relative;
+    display: inline-block;file:///C:/Users/reded/Desktop/question1.html
+}
+
+img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre horizontalement et verticalement */
+    color: white;
+    font-size: 150%; /* Ajustez la taille selon vos besoins */
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Évite le passage à la ligne */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in; /* Optionnel : une animation d'apparition */
+}
+#clickMeGif {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    display: none; /* Cacher par défaut */
+    animation: fadeIn 2s ease-in; /* Optionnel : une animation d'apparition */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+//page difficultieschoose.html
+        #blocks-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 60%;
+        }
+
+.block {
+            width: 100%;
+            height: 20%;
+            margin: 10px 0;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 600%;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+.block:hover {
+       transform: scale(1.05);
+}
+
+#block1 {
+       background-color: lightgreen;
+}
+
+#block2 {
+       background-color: orange;
+}
+
+#block3 {
+       background-color: lightcoral;
+}
+
+#block4 {
+       background-color: grey;
+}
+
+.reponse{
+
+}
