@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tilitTILT/tilit/stylesquestion.css">
+</head>
+<body style="background-image: url('https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/echo.jpg'); /* Remplacez par votre image de fond */">
+    <p>Dans quels conditions les échographies se voient remboursées à 100%</p>
+    <div>
+        <button id="false-button">uniquement dans le cadre d'une grossesse</button>
+        <button id="true-button">uniquement dans le cadre d'une IVG</button>
+    </div>     
+    <div>
+	<button id="false-button2" style="background: rgba(48, 214, 49, 0.7);">dans les 2 cas</button>
+	<button id="false-button3" style="background: rgba(49, 48, 214, 0.7);">dans aucun cas</button>
+    </div>
+
+    <div id="gif-container" style="left: -20%;">
+        <img src="https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/74US.gif" alt="Loading GIF">
+    </div>
+    <div id="gif-container2">
+        <img src="https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/failed.gif" alt="Loading GIF">
+    </div>
+    <script>
+ 	document.getElementById('false-button').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse4M.html';
+            }, gifDuration);
+        });
+        document.getElementById('false-button2').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse4M.html';
+            }, gifDuration);
+        });
+        document.getElementById('false-button3').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse4.html';
+            }, gifDuration);
+        });
+        document.getElementById('true-button').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse4.html';
+            }, gifDuration);
+        });
+    </script>
+</body>
+</html>

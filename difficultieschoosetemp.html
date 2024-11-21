@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix du level</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tilitTILT/tilit/styles.css">
+</head>
+<body>
+    <h1>Choississez le niveau de difficulté auquel vous souhaiter vous confronter</h1>
+    <a href="question1F.html" class="block" id="block1">Facile</a>
+    <a href="question1M.html" class="block" id="block2">Moyen</a>
+    <a href="question1.html" class="block" id="block3">Difficile</a>
+    <a href="#" class="block" id="block4">Secret</a>
+
+     <script src="script.js"></script>
+<script>// Sélectionne le lien avec l'ID 'block4'
+const secretBlock = document.getElementById('block4');
+
+// Ajoute un gestionnaire d'événement pour le clic
+secretBlock.addEventListener('click', function (event) {
+    // Empêche le comportement par défaut du lien
+    event.preventDefault();
+
+    // Remplace le texte de l'élément
+    secretBlock.textContent = "Locked";
+});
+</script>
+
+</body>
+</html>

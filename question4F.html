@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tilitTILT/tilit/stylesquestion.css">
+</head>
+<body style="background-image: url('https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/medoc.jpg'); /* Remplacez par votre image de fond */">
+    <p>L'avortement médicamenteux est réversible suite à la prise de la première pillule.</p>
+    <div>
+        <button id="true-button"> Vrai </button>
+	<button id="false-button"> Faux </button>
+    </div>
+
+    <div id="gif-container">
+        <img src="https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/74US.gif" alt="Loading GIF">
+    </div>
+    <div id="gif-container2">
+        <img src="https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/failed.gif" alt="Loading GIF">
+    </div>
+    <script>
+ 	document.getElementById('false-button').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse4F.html';
+            }, gifDuration);
+        });
+        document.getElementById('true-button').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse4F.html';
+            }, gifDuration);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tilitTILT/tilit/stylesquestion.css">
+</head>
+<body style="background-image: url('https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/docteur.jpg'); /* Remplacez par votre image de fond */">
+    <p>Quel est le nombre d'avortement annuel pratiqué dans le monde en 2023</p>
+    <div>
+        <button id="false-button">58 millions</button>
+        <button id="false-button2">67 millions</button>
+    </div>
+    <div>
+	<button id="true-button" style="background: rgba(48, 214, 49, 0.7);">73 millions</button>
+	<button id="false-button3" style="background: rgba(49, 48, 214, 0.7);">77 millions</button>
+    </div>
+
+    <div id="gif-container" style="top:-30%;">
+        <img src="https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/74US.gif" alt="Loading GIF">
+    </div>
+    <div id="gif-container2">
+        <img src="https://raw.githubusercontent.com/tilitTILT/tilit/refs/heads/main/failed.gif" alt="Loading GIF">
+    </div>
+    <script>
+ 	document.getElementById('false-button').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse2.html';
+            }, gifDuration);
+        });
+        document.getElementById('false-button2').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse2.html';
+            }, gifDuration);
+        });
+        document.getElementById('false-button3').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container2');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse2.html';
+            }, gifDuration);
+        });
+        document.getElementById('true-button').addEventListener('click', function () {
+            // Affiche le GIF
+            const gifContainer = document.getElementById('gif-container');
+            gifContainer.style.display = 'flex';
+
+            // Durée du GIF en millisecondes (remplacez par la durée réelle de votre GIF)
+            const gifDuration = 1000;
+
+            // Redirige vers la page reponse1V.html après la durée du GIF
+            setTimeout(() => {
+                window.location.href = 'reponse2.html';
+            }, gifDuration);
+        });
+    </script>
+</body>
+</html>
